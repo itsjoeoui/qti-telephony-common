@@ -1972,22 +1972,8 @@
     .line 306
     .end local v1    # "i":I
     :cond_4
-    invoke-virtual {p0}, Lcom/qualcomm/qti/internal/telephony/QtiPhoneSwitcher;->isEmergency()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_5
-
-    .line 307
-    const-string v1, "onEvalaute aborted due to Emergency"
-
-    invoke-virtual {p0, v1}, Lcom/qualcomm/qti/internal/telephony/QtiPhoneSwitcher;->log(Ljava/lang/String;)V
-
-    .line 308
-    return-void
 
     .line 311
-    :cond_5
     if-eqz v6, :cond_e
 
     .line 312
